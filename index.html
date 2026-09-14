@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#070b18" />
+    <meta name="description" content="Гуляй по городу — на карте раскрывается туман там, где ты прошёл" />
+
+    <!--
+      iOS не читает manifest.webmanifest для «на экран Домой» — ему нужны
+      свои мета-теги. Без apple-mobile-web-app-capable страница откроется
+      в Safari с адресной строкой, а не на весь экран.
+    -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Туман" />
+    <link rel="apple-touch-icon" href="./app-icon.png" />
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="./app-icon.png" />
+
+    <title>Туман войны</title>
+    <script type="module" crossorigin src="/fog-map-web/assets/index-KQyZYRKu.js"></script>
+    <link rel="stylesheet" crossorigin href="/fog-map-web/assets/index-DAM5xeUY.css">
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
